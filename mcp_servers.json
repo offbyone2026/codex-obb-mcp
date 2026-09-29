@@ -52,7 +52,32 @@
       "port": 9876,
       "tools": 157,
       "category": "mesh|material|texture|scene|render",
-      "note": "本机已部署验证（Blender 4.5.14 LTS）"
+      "note": "本机已部署验证（Blender 4.5.14 LTS）",
+      "finer_grained": "见 finer-grained.md 第一节"
+    },
+    "sora": {
+      "name": "Sora MCP（视频生成）",
+      "engine": "OpenAI Sora 2 API",
+      "install": "git clone Porkbutts/sora-mcp-server + npm install/build",
+      "command": "node",
+      "args": ["D:/work/mcp-servers/sora-mcp-server/dist/index.js"],
+      "env": { "OPENAI_API_KEY": "sk-...（需开通 Sora 权限）", "DOWNLOAD_DIR": "D:/work/Assets/videos" },
+      "tools": 8,
+      "category": "video|text-to-video|image-to-video|remix|job",
+      "note": "备选 Doriandarko/sora-mcp（stdio+HTTP 双模式）；托管备选 AceDataCloud/SoraMCP",
+      "doc": "sora-mcp.md"
+    },
+    "ludo": {
+      "name": "Ludo MCP（AI 素材全栈）",
+      "engine": "Ludo AI 平台",
+      "install": "npx @ludo-ai/mcp（以仓库 README 为准）",
+      "command": "npx",
+      "args": ["-y", "@ludo-ai/mcp"],
+      "env": { "LUDO_API_KEY": "ludo_..." },
+      "tools": 30,
+      "category": "sprite|3d-model|animation|video|audio|tts|job",
+      "note": "GitHub: ludo-ai/ludo-mcp；异步任务队列；生成前先查余额",
+      "doc": "ludo-mcp.md"
     }
   }
 }

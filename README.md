@@ -2,7 +2,7 @@
 
 本仓库收录 OffByOne Studio 多功能开发平台（Codex 改壳版）可用的 MCP 工具清单与安装配置。客户端 obb_agent.py 依据主仓 manifest.json 自动拉取本仓库内容。
 
-覆盖范围：Godot / Unity / Unreal Engine / Steam / Blender 等游戏开发与发行相关 MCP server。
+覆盖范围：Godot / Unity / Unreal Engine / Steam / Blender 等游戏开发与发行相关 MCP server，以及 OpenAI Sora 视频生成、Ludo AI 素材全栈等新增方向（v1.2.0）。
 
 ## 目录
 
@@ -13,6 +13,10 @@
 | [unreal-mcp.md](unreal-mcp.md) | Unreal Engine 5 编辑器控制 MCP |
 | [steam-mcp.md](steam-mcp.md) | Steam 平台数据/发行相关 MCP |
 | [blender-mcp.md](blender-mcp.md) | Blender 建模/贴图自动化 MCP |
+| [sora-mcp.md](sora-mcp.md) | Sora 视频生成 MCP（OpenAI Sora 2 官方 API，文生视频/图生视频/remix） |
+| [ludo-mcp.md](ludo-mcp.md) | Ludo AI 素材全栈 MCP（sprite/3D/动画/视频/音效/BGM/配音/TTS） |
+| [finer-grained.md](finer-grained.md) | 精细化 MCP 工具清单（引擎 MCP 按子系统细粒度子集 + 上下文预算管理） |
 | [mcp_servers.json](mcp_servers.json) | 汇总安装配置（可直接写入客户端 mcpServers） |
 
 > 说明：所有 MCP 均为本地运行（stdio/HTTP），需在客户端本地安装对应引擎与依赖。
+> 精细化策略：大 MCP 按子系统启用子集（见 finer-grained.md），避免一次性挂载全部工具挤占上下文。
