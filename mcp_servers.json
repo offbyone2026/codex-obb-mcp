@@ -1,0 +1,58 @@
+{
+  "servers": {
+    "godot": {
+      "name": "Godot MCP",
+      "engine": "Godot 4.x",
+      "install": "npm/npx",
+      "command": "npx",
+      "args": ["-y", "godot-mcp-server"],
+      "env": { "GODOT_PORT": "9080" },
+      "plugin": "MCP Bridge（AssetLib 安装，项目内 addons/mcp_bridge）",
+      "tools": 42,
+      "category": "scene|script|project|asset|visualization"
+    },
+    "unity": {
+      "name": "Unity MCP",
+      "engine": "Unity Editor",
+      "install": "UPM/仓库复制",
+      "repo": "CoplayDev/unity-mcp",
+      "tools": 40,
+      "category": "scene|asset|script|automation",
+      "note": "备选 AnkleBreaker-Studio/unity-mcp-server 268 tools"
+    },
+    "unreal": {
+      "name": "Unreal MCP",
+      "engine": "Unreal Engine 5",
+      "install": "pip install unrealmcp",
+      "command": "unrealmcp",
+      "args": [],
+      "env": {},
+      "plugin": "C++ 插件 TCP server localhost:55557（自动发现编辑器）",
+      "tools": 280,
+      "category": "asset|blueprint|material|datatable|actor|niagara|statetree|input|umg|profiling"
+    },
+    "steam": {
+      "name": "Steam MCP",
+      "install": "uvx steam-mcp",
+      "command": "uvx",
+      "args": ["steam-mcp"],
+      "env": {},
+      "port": 11020,
+      "tools": 14,
+      "category": "profile|library|stats|store|workshop",
+      "note": "发行商侧备选 TMHSDigital/Steam-MCP 26 tools（含 Publisher 操作）"
+    },
+    "blender": {
+      "name": "Blender MCP",
+      "engine": "Blender 4.x",
+      "install": "uv tool run mcp-for-blender install-addon + GUI 启动 socket",
+      "command": "uvx",
+      "args": ["mcp-for-blender"],
+      "env": {},
+      "port": 9876,
+      "tools": 157,
+      "category": "mesh|material|texture|scene|render",
+      "note": "本机已部署验证（Blender 4.5.14 LTS）"
+    }
+  }
+}
