@@ -78,6 +78,54 @@
       "category": "sprite|3d-model|animation|video|audio|tts|job",
       "note": "GitHub: ludo-ai/ludo-mcp；异步任务队列；生成前先查余额",
       "doc": "ludo-mcp.md"
+    },
+    "cocos": {
+      "name": "Cocos Creator MCP",
+      "engine": "Cocos Creator 3.x",
+      "install": "npm 启动 MCP server + 编辑器扩展（搜 Cocos MCP 或手动导入）",
+      "command": "npx",
+      "args": [],
+      "env": {},
+      "tools": 30,
+      "category": "scene|node|component|asset|code",
+      "note": "GitHub: DaxianLee/cocos-mcp-server（1300+ 星）；备选 RomaRogov/cocos-mcp（HTTP）",
+      "doc": "cocos-mcp.md"
+    },
+    "3dgen": {
+      "name": "AI 3D 生成 MCP（文生3D/图生3D）",
+      "engine": "Tripo3D / Hyper3D Rodin / Meshy",
+      "install": "npm 安装 mcp-3d-gen + 任一供应商 API key",
+      "command": "npx",
+      "args": [],
+      "env": { "TRIPO_API_KEY": "t-...", "MESHY_API_KEY": "..." },
+      "tools": 10,
+      "category": "text-to-3d|image-to-3d|glb|fbx|obj|bake",
+      "note": "GitHub: kevinten-ai/mcp-3d-gen；备选 MubarakHAlketbi/game-asset-mcp(HF)、HurtzDonutStudios/ai-forge-mcp(AAA 565 tools)",
+      "doc": "3d-asset-gen-mcp.md"
+    },
+    "elevenlabs": {
+      "name": "ElevenLabs MCP（TTS/配音）",
+      "engine": "ElevenLabs API",
+      "install": "npm @elevenlabs/elevenlabs-mcp（托管）或本地部署",
+      "command": "npx",
+      "args": [],
+      "env": { "ELEVENLABS_API_KEY": "sk_..." },
+      "tools": 15,
+      "category": "tts|voice|audio|multi-language|clone",
+      "note": "官方实现 elevenlabs/elevenlabs-mcp；音乐备选 unforced/suno-mcp、zaptrem/music-mcp",
+      "doc": "audio-music-mcp.md"
+    },
+    "playwright": {
+      "name": "Playwright MCP（Web 自动化测试）",
+      "engine": "浏览器（Chromium/Firefox/WebKit）",
+      "install": "npx @playwright/mcp 或客户端内置",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"],
+      "env": {},
+      "tools": 30,
+      "category": "browser|ui-test|click|form|screenshot|spa",
+      "note": "微软官方 microsoft/playwright-mcp；Web 游戏端到端测试",
+      "doc": "game-testing-mcp.md"
     }
   }
 }

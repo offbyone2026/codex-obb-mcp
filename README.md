@@ -16,6 +16,16 @@
 | [sora-mcp.md](sora-mcp.md) | Sora 视频生成 MCP（OpenAI Sora 2 官方 API，文生视频/图生视频/remix） |
 | [ludo-mcp.md](ludo-mcp.md) | Ludo AI 素材全栈 MCP（sprite/3D/动画/视频/音效/BGM/配音/TTS） |
 | [finer-grained.md](finer-grained.md) | 精细化 MCP 工具清单（引擎 MCP 按子系统细粒度子集 + 上下文预算管理） |
+| [godot-mcp-ecosystem.md](godot-mcp-ecosystem.md) | Godot 生态补充（v2 runtime / RAG 文档问答 / Peek） |
+| [unity-mcp-ecosystem.md](unity-mcp-ecosystem.md) | Unity 生态补充（unityctl 179 命令 / Rust / C# 执行） |
+| [unreal-mcp-ecosystem.md](unreal-mcp-ecosystem.md) | Unreal 生态补充（轻量 TCP / Python 批处理 / 蓝图桥） |
+| [cocos-mcp.md](cocos-mcp.md) | Cocos Creator 3.x MCP（国产 2D/小游戏引擎） |
+| [web-indie-mcp.md](web-indie-mcp.md) | Web 与独立引擎 MCP（Phaser/Bevy/Defold/RPG Maker/Three.js） |
+| [3d-asset-gen-mcp.md](3d-asset-gen-mcp.md) | AI 3D 资产生成（mcp-3d-gen Tripo/Meshy/Rodin + HF + AAA 管线） |
+| [audio-music-mcp.md](audio-music-mcp.md) | 音频音乐 MCP（ElevenLabs 官方 TTS / Suno / Ableton Live） |
+| [game-testing-mcp.md](game-testing-mcp.md) | 测试与平衡 MCP（Playwright 官方 / 战斗平衡数值分析） |
+| [steam-ecosystem-mcp.md](steam-ecosystem-mcp.md) | Steam 生态补充（TMHS 写操作 / 评测分析 / itch jams / 游戏库） |
+| [project-collab-mcp.md](project-collab-mcp.md) | 项目协作 MCP（Notion / Atlassian / GitHub 官方） |
 | [mcp_servers.json](mcp_servers.json) | 汇总安装配置（可直接写入客户端 mcpServers） |
 
 > 说明：所有 MCP 均为本地运行（stdio/HTTP），需在客户端本地安装对应引擎与依赖。
